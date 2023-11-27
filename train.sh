@@ -2,7 +2,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 MODEL_NAME="BAAI/AltDiffusion-m18"
 DATASET_NAME="lambdalabs/pokemon-blip-captions"
 
-accelerate launch --mixed_precision="fp16" --multi_gpu train_text_to_image_ad.py \
+accelerate launch --mixed_precision="fp16" --multi_gpu train_text_to_image_altdiffusion.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
   --dataset_name=$DATASET_NAME \
   --use_ema \
