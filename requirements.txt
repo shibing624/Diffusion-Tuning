@@ -1,0 +1,7 @@
+diffusers>=0.23.1
+transformers>=4.33.2
+datasets>=2.14.6
+tqdm
+tensorboard
+tqdm>=4.47.0
+accelerate>=0.21.0
